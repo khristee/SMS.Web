@@ -9,7 +9,10 @@ namespace SMS.Web.Models
         public string Address { get; set; }    
         public string EnrollmentNo { get; set; }    
         public string FatherName { get; set; }    
-        public Gender Gender { get; set; }    
+        public Gender Gender { get; set; }
+        public virtual List<StudentCourse> StudentCourses { get; set; }
+        public virtual List<TeacherCourse> TeacherCourses { get; set; }
+
     }
 
     public enum Gender
